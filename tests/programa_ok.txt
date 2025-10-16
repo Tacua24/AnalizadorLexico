@@ -1,0 +1,18 @@
+int suma = 0;
+float promedio = 0.0;
+
+while (suma < 100) {
+    suma = suma + 10;
+    if (suma >= 50) {
+        promedio = suma / 2;
+    } else {
+        promedio = suma / 4;
+    }
+}
+
+// Comentario de línea
+/* Comentario
+   de bloque */
+
+return;
+

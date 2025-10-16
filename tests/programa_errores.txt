@@ -1,0 +1,12 @@
+int a = 5;
+float b = 3.14;
+a = a + b;
+
+if (a <= 10) {
+    a = a + 1;
+} else {
+    a = a - 1;
+}
+
+?  // <- símbolo no válido
+a @= 2; // @ no existe
