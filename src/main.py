@@ -30,7 +30,7 @@ def procesar_archivo(ruta_entrada: Path, ruta_log: Path):
             declaracion = detectar_declaracion(linea)
             if declaracion:
                 lineas_declaracion.append((num_linea, declaracion))
-                f_log.write(f"Línea {num_linea}: ESTRUCTURA_CONTROL → {declaracion}\n")
+                f_log.write(f"Línea {num_linea}: DECLARACION_VARIABLE → {declaracion}\n")
 
         # resumen
         f_log.write("\n=====RESUMEN=====\n")

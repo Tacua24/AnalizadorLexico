@@ -35,13 +35,13 @@ def analizar_linea(linea: str, num_linea: int):
                     tokens.append(Token("PALABRAS_RESERVADAS", lexema, num_linea, i + 1))
                 else:
                     if tipo == "DELIMITADOR" and lexema not in DELIMITADORES:
-                        tokens.append(Token("ERROR", lexema, num_linea, i+1))
+                        tokens.append(Token("ERROR", lexema, num_linea, i + 1))
                     else:
-                        tokens.append(Token(tipo, lexema, num_linea, i+1))
+                        tokens.append(Token(tipo, lexema, num_linea, i + 1))
                 i = m.end()
                 match = True
                 break
         if not match:
-            tokens.append(Token("ERROR", linea[i], num_linea, i+1))
+            tokens.append(Token("ERROR", linea[i], num_linea, i + 1))
             i += 1
-        return tokens
+    return tokens
